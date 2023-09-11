@@ -1,0 +1,159 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap');
+
+:root{
+  --primary: black;
+  --error: #e7195a;
+
+}
+body {
+  background: #f1f1f1;
+  font-family: 'Poppins', sans-serif, Arial, Helvetica;
+  margin: 0;
+}
+
+header{
+  background-color: #fff;
+}
+
+header.container{
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+header a{
+  color: #333;
+  text-decoration: none;
+}
+
+.pages{
+  max-width: 1400 px;
+  padding: 20 px;
+  margin: 0 auto;
+}
+
+.home{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 100px;
+}
+
+.team-details{
+  background: #fff;
+  border-radius: 8px;
+  border-color: #333;
+  margin: 20px auto;
+  padding: 20px;
+
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+
+.team-details h4{
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+  color: #333;
+  font: bold;
+}
+
+.team-details p{
+  margin: 0;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.team-details span{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background: #fff;
+  padding: 6px;
+  border-radius: 50%;
+  color: #333;
+}
+
+label, input {
+  display: block;
+}
+
+input {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form button {
+  background: var(--primary);
+  border: 0;
+  color: #fff;
+  padding: 10px;
+  font-family: 'Poppins';
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+div.error {
+  background: #ffefef;
+  padding: 10px;
+  border: 1px solid var(--error);
+  color: var(--error);
+  margin-bottom: 20px 0;
+  border-radius: 4px;
+}
+
+input.error {
+  border: 1px solid var(--error);
+}
+
+div.success {
+  background: #e1ffef;
+  padding: 10px;
+  border: 1px solid #00b300;
+  color: #00b300;
+  margin-bottom: 20px 0;
+  border-radius: 4px;
+}
+
+input.success {
+  border: 1px solid #00b300;
+}
+
+nav {
+  background: #fff;
+  border-radius: 8px;
+  border-color: #333;
+  margin: 20px auto;
+  padding: 20px;
+
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+  margin-right: 1 em;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-block-start: auto;
+  display: inline-block;
+  margin-right: 1 em;
+
+
+}
+
+nav ul li {
+  margin-top: 0px;
+  display: inline-block;
+  padding: 0 10px;
+  margin-right: 1 em;
+}
