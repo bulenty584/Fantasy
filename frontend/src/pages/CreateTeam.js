@@ -2,7 +2,6 @@ import Form from '../components/Form'
 
 
 const Createteam = () => {
-
     return (
         <Form/>
     )

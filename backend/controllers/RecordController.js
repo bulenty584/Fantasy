@@ -2,15 +2,12 @@ const Record = require("../models/RecordListModel.js");
 const mongoose = require("mongoose");
 
 
-
 //get all records
 
 const getAllRecords = async (req, res) => {
     const records = await Record.find({});
 
     res.status(200).json(records);
-
-
 }
 
 
@@ -100,6 +97,8 @@ const deleteRecord = async (req, res) => {
     res.status(200).json(record);
 
 }
+
+
     
 
 
