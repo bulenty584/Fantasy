@@ -34,7 +34,7 @@ const getRecord = async (req, res) => {
 //create a new record
 
 const createRecord = async (req, res) => {
-    const { team_name, top_scorer } = req.body;
+    const { team_name, top_scorer, formation } = req.body;
 
     let emptyFields = [];
 
@@ -46,12 +46,16 @@ const createRecord = async (req, res) => {
         emptyFields.push("top_scorer");
     }
 
+    if (!formation){
+        emptyFields.push("formation");
+    }
+
     if (emptyFields.length > 0){
         return res.status(400).json({ error: 'Please Fill in All Fields', emptyFields });
     }
     
     try{
-      const records = await Record.create({ team_name, top_scorer });
+      const records = await Record.create({ team_name, top_scorer , formation});
       res.status(200).json(records);
     } catch (err) {
       res.status(400).json({ message: err.message });

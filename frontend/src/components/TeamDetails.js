@@ -21,6 +21,7 @@ const TeamDetails = ({ team }) => {
         <div className = "team-details">
             <h4>{team.team_name}</h4>
             <p>{team.top_scorer}</p>
+            <p>{team.formation}</p>
             <span className = "material-symbols-outlined" onClick = {handleClick}> delete</span>
         </div>
     )

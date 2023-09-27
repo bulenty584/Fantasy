@@ -48,3 +48,4 @@ function Team({key, team, played, win, draw, loss, goalsFor, goalsAgainst, point
 }
 
 export default Team;
+
